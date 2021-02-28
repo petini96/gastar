@@ -19,4 +19,12 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::group([
+    "middleware" => "web"
+], function(){
+    Route::resource('categorias', 'Web\CategoryController');
+
+});
+
+
 Route::get('/home', 'HomeController@index')->name('home');

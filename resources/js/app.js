@@ -19,7 +19,13 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
+import ShowCategories from './components/ShowCategories.vue';
+import Header from './components/Header.vue';
+
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('show-categories', ShowCategories);
+Vue.component('header-user', Header);
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
