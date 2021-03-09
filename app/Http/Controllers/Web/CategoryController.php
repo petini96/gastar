@@ -14,8 +14,10 @@ class CategoryController extends Controller
             "name" => "Jumbersom",
             "years_old" => "24"
         ];
+        $message = "Vai tomar no seu cu com sucesso";
+        $message = json_encode($message);
         $user = json_encode($user);
-        return view('categories.index', compact('user'));
+        return view('categories.index', compact('user','message'));
     }
 
     /**

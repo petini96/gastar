@@ -8,7 +8,9 @@ class Category extends Model
 {
     protected $fillable = [
         "id",
-        "description" 
+        "description",
+        "text",
+        "icon"
     ];
     
     protected $dates = [
